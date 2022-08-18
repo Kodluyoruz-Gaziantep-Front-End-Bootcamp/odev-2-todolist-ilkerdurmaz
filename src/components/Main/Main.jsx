@@ -1,5 +1,6 @@
 import "./Main.css";
 import ToDoInput from '../ToDoInput/ToDoInput';
+import ToDo from '../ToDo/ToDo';
 
 export default function Main() {
   return (
@@ -11,9 +12,9 @@ export default function Main() {
       <ToDoInput />
       <hr />
       <div id="toDoList">
-        <p>todo1</p>
-        <p>todo1</p>
-        <p>todo1</p>
+        <ToDo />
+        <ToDo />
+        <ToDo />
       </div>
     </div>
   );

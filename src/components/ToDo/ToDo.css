@@ -44,10 +44,16 @@
 }
 
 #check:hover {
-    color: green;
+    color: yellow;
 }
 
-#toDo button:active {}
+.icon-color {
+    color: green !important;
+}
+
+#toDo button:active {
+    transform: translateY(2px);
+}
 
 .react-icons {
     vertical-align: middle;

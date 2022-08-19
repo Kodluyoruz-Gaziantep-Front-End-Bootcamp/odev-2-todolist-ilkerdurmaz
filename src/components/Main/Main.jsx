@@ -43,7 +43,7 @@ export default function Main() {
       <hr />
       <div id="toDoList">
         {todos.length > 0 ? todos.map((todo, index) => {
-          return <ToDo message={todo.message} key={index} index={index} isDone={todo.isDone} deleteT={deleteTodo} checkMark={checkMark} />;
+          return <ToDo message={todo.message} key={index} index={index} deleteTodo={deleteTodo} checkMark={checkMark} isDone={todo.isDone} />;
         }) : <h3>No todos</h3>}
 
       </div>

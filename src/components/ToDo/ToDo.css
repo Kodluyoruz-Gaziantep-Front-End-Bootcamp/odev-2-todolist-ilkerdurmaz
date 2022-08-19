@@ -47,10 +47,6 @@
     color: yellow;
 }
 
-.icon-color {
-    color: green !important;
-}
-
 #toDo button:active {
     transform: translateY(2px);
 }

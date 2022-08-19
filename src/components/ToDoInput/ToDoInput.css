@@ -10,10 +10,16 @@
     outline: none;
     color: #e8eaed;
     line-height: 2.5rem;
-    font-size: 1rem;
+    font-size: 2vmin;
     width: 80%;
     margin: 1rem;
     padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #Box #todo {
+        font-size: 3vmin;
+    }
 }
 
 #saveBtn {
@@ -27,10 +33,10 @@
     background-size: 200% auto;
     color: #e8eaed;
     text-align: center;
+    cursor: pointer;
 }
 
 #saveBtn:active {
-    background-color: #343a40;
     background-position: right center;
     border: 2px solid black;
     transform: translateY(2px);

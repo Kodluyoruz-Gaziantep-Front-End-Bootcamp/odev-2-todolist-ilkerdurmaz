@@ -2,6 +2,7 @@ import "./Main.css";
 import ToDoInput from '../ToDoInput/ToDoInput';
 import ToDo from '../ToDo/ToDo';
 import { useState, useEffect } from "react";
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 
 export default function Main() {
@@ -36,7 +37,11 @@ export default function Main() {
   return (
     <div className="main">
       <div id="Header">
-        <h2>To-Do List</h2>
+        <h2>To - Do List</h2>
+        <div id="Links">
+          <a href="https://github.com/ilkerdurmaz"><BsGithub /></a>
+          <a href="https://www.linkedin.com/in/ilker-durmaz"><BsLinkedin /></a>
+        </div>
       </div>
       <hr />
       <ToDoInput handler={updateTodos} />
@@ -44,8 +49,7 @@ export default function Main() {
       <div id="toDoList">
         {todos.length > 0 ? todos.map((todo, index) => {
           return <ToDo message={todo.message} key={index} index={index} deleteTodo={deleteTodo} checkMark={checkMark} isDone={todo.isDone} />;
-        }) : <h3>No todos</h3>}
-
+        }) : <h3>List is empty.</h3>}
       </div>
     </div>
   );

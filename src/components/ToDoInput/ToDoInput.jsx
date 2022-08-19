@@ -11,7 +11,7 @@ export default function ToDo({ handler }) {
     }
 
     function saveTodo() {
-        if (todo.length > 3) {
+        if (todo.length > 2) {
             handler({
                 message: todo,
                 isDone: false
@@ -22,7 +22,7 @@ export default function ToDo({ handler }) {
     }
     return (
         <div id='Box'>
-            <input type="text" placeholder='Enter a To-Do...' id='todo' onChange={handleChange} value={todo} />
+            <input type="text" placeholder='Enter a To-Do with at least 3 letters.' id='todo' onChange={handleChange} value={todo} />
             <button id='saveBtn' onClick={saveTodo}>Save</button>
         </div>
     );

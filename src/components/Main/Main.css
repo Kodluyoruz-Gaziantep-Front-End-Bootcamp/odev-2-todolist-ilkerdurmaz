@@ -18,11 +18,28 @@
 }
 
 #Header {
-    text-align: center;
-    padding: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
     margin: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px 8px 0 0;
+}
+
+#Links {
+    padding-top: 0.5rem;
+}
+
+#Links a {
+    font-size: 2rem;
+    color: #e8eaed;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#Links a:hover {
+    color: yellow;
 }
 
 #toDoList {

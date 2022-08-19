@@ -39,8 +39,8 @@ export default function Main() {
       <div id="Header">
         <h2>To - Do List</h2>
         <div id="Links">
-          <a href="https://github.com/ilkerdurmaz"><BsGithub /></a>
-          <a href="https://www.linkedin.com/in/ilker-durmaz"><BsLinkedin /></a>
+          <a href="https://github.com/ilkerdurmaz" target="_blank" rel="noreferrer"><BsGithub /></a>
+          <a href="https://www.linkedin.com/in/ilker-durmaz" target="_blank" rel="noreferrer"><BsLinkedin /></a>
         </div>
       </div>
       <hr />
